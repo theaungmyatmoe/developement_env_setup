@@ -18,6 +18,8 @@ for (( i = 0; i <= $pkgsLength; i++ )); do
     pkg install ${pkgs[$i]} -y
 done
 
+pkg upgrade
+
 # download server configuration file via wget
 wget https://raw.githubusercontent.com/amm834/developement_env_setup/main/httpd.conf
 
