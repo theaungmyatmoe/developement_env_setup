@@ -12,7 +12,7 @@ rm $PREFIX/etc/motd
 apt upgrade && apt update -y
 
 # install packages
-pkgs=("git" "wget" "zsh" "composer" "php" "apache" "php-apache" "mariadb" "rust" "clang" "camake")
+pkgs=("git" "wget" "zsh" "composer" "php" "apache" "php-apache" "mariadb" "rust" "clang" "camake" "lsd")
 pkgsLength=${#pkgs[@]}
 for (( i = 0; i <= $pkgsLength; i++ )); do
     pkg install ${pkgs[$i]} -y
